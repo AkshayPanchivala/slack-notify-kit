@@ -111,13 +111,13 @@ Contributions are welcome!
 3. Make your changes
 4. Open a pull request
 
-See our [Code of Conduct](CODE_OF_CONDUCT.md) for guidelines.
+See our [Code of Conduct](https://github.com/AkshayPanchivala/slack-notify-kit/blob/main/CODE_OF_CONDUCT.md) for guidelines.
 
 ---
 
 ## 📜 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License — see [LICENSE](https://github.com/AkshayPanchivala/slack-notify-kit/blob/main/LICENSE.txt) for details.
 
 ---
 
