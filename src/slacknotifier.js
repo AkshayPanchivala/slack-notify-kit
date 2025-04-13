@@ -9,7 +9,7 @@ class SlackNotifier {
     this.webhookUrl = webhookUrl;
   }
 
-  async sendNotification(message, type = 'info', channel = null, isHtml = false, isCodeBlock = false) {
+  async sendNotification(message, type = 'info', isHtml = false, isCodeBlock = false) {
     try {
       const colors = {
         info: '#36a64f',
@@ -32,13 +32,9 @@ class SlackNotifier {
           }
         ]
       };
-
-      if (channel) payload.channel = channel;
-
       const response = await axios.post(this.webhookUrl, payload);
     } catch (error) {
-      throw new Error('Failed to send notification:', error.message);
-
+      console.error('Failed to send notification:', error.message);
     }
   }
 
