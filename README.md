@@ -111,6 +111,8 @@ Pull requests and feedback are welcome! Let’s make Slack notifications awesome
 
 ## 👤 Author
 
-**Akshay Panchivala**  
-[GitHub Profile](github:AkshayPanchivala/slack-notify-kit)
+**Akshay Panchivala**
+[GitHub Profile](https://github.com/AkshayPanchivala/slack-notify-kit)
+
+---
 
