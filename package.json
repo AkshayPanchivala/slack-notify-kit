@@ -1,16 +1,31 @@
 {
   "name": "slack-notify-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Send customizable Slack notifications with HTML, Markdown, and code formatting. Lightweight Node.js utility for alerts, logs, and real-time messaging.",
   "main": "src/slackNotifier.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "slack",
+    "notification",
+    "slack-notifier",
+    "webhook",
+    "html-to-text",
+    "slack alerts",
+    "nodejs",
+    "markdown",
+    "logging",
+    "messaging",
+    "slack-kit",
+    "slack webhook",
+    "realtime"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AkshayPanchivala/slack-notify-kit.git"
+    "url": "https://github.com/AkshayPanchivala/slack-notify-kit.git"
   },
-  "author": "",
+  "author": "Akshay Panchivala",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AkshayPanchivala/slack-notify-kit/issues"
