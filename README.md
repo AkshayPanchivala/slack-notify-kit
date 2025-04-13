@@ -97,15 +97,28 @@ sendNotification(message, type, isHtml, isCodeBlock)
 
 ---
 
-## 📜 License
+## 🤝 Contributing
 
-MIT
+We welcome contributions! Follow these steps:
+
+1. Fork the repository.
+2. Clone your fork.
+3. Create a new branch for your feature or bug fix.
+4. Commit your changes and push the branch.
+5. Submit a pull request.
+
+Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
-## 🤝 Contributing
+## 📜 License
 
-Pull requests and feedback are welcome! Let’s make Slack notifications awesome together.
+slack-notify-kit is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Keywords
+Node.js,slack, Express, slack webhook, slack notifications, slack alerts webhook, slack bot, html to slack, markdown, notification system, realtime messaging,log reporter,automation,html to text,devops tools.
 
 ---
 
