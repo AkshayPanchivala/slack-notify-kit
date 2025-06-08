@@ -9,10 +9,6 @@ jobs:
   publish:
     name: Publish Package
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      # needed to use secrets
-      id-token: write 
 
     steps:
       - name: Checkout code
@@ -21,8 +17,9 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Or your preferred version
+          node-version: '20'
           registry-url: 'https://registry.npmjs.org/'
+          always-auth: true
 
       - name: Install dependencies
         run: npm install
