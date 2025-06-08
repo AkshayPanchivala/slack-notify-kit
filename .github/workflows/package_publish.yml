@@ -1,0 +1,36 @@
+name: Publish to npm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    name: Publish Package
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      # needed to use secrets
+      id-token: write 
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Or your preferred version
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build package
+        run: npm run build # Optional: only if you have a build step
+
+      - name: Publish to npm
+        run: npm publish --access public # remove --access if private
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

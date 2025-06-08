@@ -1,6 +1,6 @@
 {
   "name": "slack-notify-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send customizable Slack notifications with HTML, Markdown, and code formatting. Lightweight Node.js utility for alerts, logs, and real-time messaging.",
   "main": "src/slackNotifier.js",
   "scripts": {
