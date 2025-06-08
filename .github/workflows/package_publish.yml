@@ -13,14 +13,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Check if NPM_TOKEN is available
-        run: |
-              if [ -z "$NPM_TOKEN" ]; then
-                echo "❌ NPM_TOKEN is NOT set"
-                exit 1
-              else
-                echo "✅ NPM_TOKEN is set"
-                fi
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -31,7 +23,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
+        
+      - name: Confirm npm auth with whoami
+        run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          
       - name: Publish to npm
         run: npm publish --access public
         env:
